@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <main class="app">
+    <header class="nav">
+      <div class="btn__toggle">
+        <img src="./images/icon-menu.svg" alt="menu">
+      </div>
+      <div class="nav__logo">
+        <a href="#">
+          <img src="./images/logo.svg" alt="sneakers">
+        </a>
+      </div>
+      <ul class="nav__list">
+        <li><a href="#" class="nav__link">Collections</a></li>
+        <li><a href="#" class="nav__link">Men</a></li>
+        <li><a href="#" class="nav__link">Women</a></li>
+        <li><a href="#" class="nav__link">About</a></li>
+        <li><a href="#" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="overlay__mobile">
+      </div>
+      <div class="mobile">
+        <div class="btn__close--mobile">
+          <img src="./images/icon-close.svg" alt="close">
+        </div>
+        <ul class="nav__list--mobile">
+          <li><a href="#" class="nav__link">Collections</a></li>
+          <li><a href="#" class="nav__link">Men</a></li>
+          <li><a href="#" class="nav__link">Women</a></li>
+          <li><a href="#" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="cart__box">
+      </div>
+      <div class="nav__right">
+        <div class="cart">
+          <a href="#">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D" fill-rule="nonzero"></path>
+            </svg>
+          </a>
+          <div class="cart__des">
+            <p>0</p>
+          </div>
+        </div>
+        <div class="info">
+          <a href="#">
+            <img src="./images/image-avatar.png" alt="avatar">
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="gallery__img">
+      <div class="gallery__close">
+        <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg">
+          <path width="100%" height="100%"
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+            fill-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="gallery__box">
+        <div class="box__prev">
+          <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <img class="img__active" src="" alt="product">
+        <div class="box__next">
+          <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+      </div>
+      <ul class="list__product--gallery">
+        <li class="product__item--gallery active" data-image="1">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail">
+        </li>
+        <li class="product__item--gallery" data-image="2">
+          <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail">
+        </li>
+        <li class="product__item--gallery" data-image="3">
+          <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail">
+        </li>
+        <li class="product__item--gallery" data-image="4">
+          <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail">
+        </li>
+      </ul>
+    </div>
+    <div class="body">
+      <div class="product">
+        <div class="product__left">
+          <div class="product__top">
+            <img src="./images/image-product-1.jpg" alt="product" data-index="1">
+            <img src="./images/image-product-2.jpg" alt="product" data-index="2">
+            <img src="./images/image-product-3.jpg" alt="product" data-index="3">
+            <img src="./images/image-product-4.jpg" alt="product" data-index="4">
+            <div class="box__prev prev--mobile">
+              <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="box__next next--mobile">
+              <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <ul class="list__product">
+            <li class="product__item active" data-image="1">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="thumbnail">
+            </li>
+            <li class="product__item" data-image="2">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="thumbnail">
+            </li>
+            <li class="product__item" data-image="3">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="thumbnail">
+            </li>
+            <li class="product__item" data-image="4">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="thumbnail">
+            </li>
+          </ul>
+        </div>
+        <div class="product__right">
+          <p>Sneaker Company</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="product__des">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="prices">
+            <div class="price">
+              <span class="product__price--now">
+                $125.00
+              </span>
+              <span class="product__discount">
+                50%
+              </span>
+            </div>
+            <p class="product__price--old">
+              $250.00
+            </p>
+          </div>
+
+          <div class="btn__addcart">
+            <div class="btn btn__count">
+              <div class="btn__decre">
+                <img src="./images/icon-minus.svg" alt="minus">
+              </div>
+              <input type="text" class="count" value="0">
+              <div class="btn__incre">
+                <img src="./images/icon-plus.svg" alt="plus">
+              </div>
+            </div>
+            <div class="btn btn__add">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#69707D" fill-rule="nonzero"></path>
+              </svg>
+              <span>Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
