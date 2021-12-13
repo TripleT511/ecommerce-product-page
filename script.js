@@ -91,39 +91,30 @@ lstProduct.forEach((item) => {
 let indexMobile = 1;
 
 nextBtnMobile.addEventListener('click', () => {
-  console.log(indexMobile);
   ++indexMobile;
   if (indexMobile > lstGallery.length) {
     indexMobile = lstProductGallery.length
   }
-  const displayWidth2 = document.querySelector('.product__top img:first-child').clientWidth;
+  const displayWidth2 = document.querySelector('.product__top .list img:first-child').clientWidth;
 
-  document.querySelector('.product__top').style.transform = `translateX(${- (indexMobile - 1) * displayWidth2}px)`;
-
-  nextBtnMobile.style.transform = `translateX(${(indexMobile - 1) * displayWidth2}px)`;
-
-  prevBtnMobile.style.transform = `translateX(${ (indexMobile - 1) * displayWidth2}px)`;
+  document.querySelector('.list').style.transform = `translateX(${- (indexMobile - 1) * displayWidth2}px)`;
 })
 
 prevBtnMobile.addEventListener('click', () => {
-  console.log(indexMobile);
   --indexMobile;
   if (indexMobile <= 1) {
     indexMobile = 1
   }
-  const displayWidth2 = document.querySelector('.product__top img:first-child').clientWidth;
+  const displayWidth2 = document.querySelector('.product__top .list img:first-child').clientWidth;
 
-  document.querySelector('.product__top').style.transform = `translateX(${- (indexMobile - 1) * displayWidth2}px)`;
+  document.querySelector('.list').style.transform = `translateX(${- (indexMobile - 1) * displayWidth2}px)`;
 
-  nextBtnMobile.style.transform = `translateX(${(indexMobile - 1) * displayWidth2}px)`;
-
-  prevBtnMobile.style.transform = `translateX(${ (indexMobile - 1) * displayWidth2}px)`;
 })
 
 function slideImg() {
     const displayWidth = document.querySelector('.product__top img:first-child').clientWidth;
 
-    document.querySelector('.product__top').style.transform = `translateX(${- (indexImg - 1) * displayWidth}px)`;
+    document.querySelector('.list').style.transform = `translateX(${- (indexImg - 1) * displayWidth}px)`;
 }
 
 /* === Count Product ===== */
@@ -179,7 +170,7 @@ function checkCart() {
                     $125.000 x ${countProduct}
                   </span>
                   <span class="cart__price">
-                    $${price}.000
+                    $${price}.00
                   </span>
                 </div>
                 <div class="cart__del" onclick=
